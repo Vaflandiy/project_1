@@ -38,3 +38,8 @@ It's funny, but our small team brought together representatives of three countri
 
 The reason is maybe even too simple. Thinking about everything that I can do and adding 2 + 2, I realized that apart from knowing English, mathematics and computer science, I have no future in most of the sciences I know. Moreover, when programming first appeared in our computer science course, I realized that I liked it.   
 I like to understand what even a machine sometimes cannot figure out if the code is written incorrectly. I like to create programs so that the computer solves the problem I need him to solve. Of course, I know that programming is a constantly evolving and improving science that you need to keep up with, but I'm ready! In the end, who does not take risks does not drink champagne!  
+
+Материалы, по которым я составил это описание себя. = The materials from which I compiled this description of myself.  
+---
+[Лайфхакер](https://lifehacker.ru/chto-takoe-markdown/)  
+[Руководство по оформление Markdown файлов](https://gist.github.com/timseriakov/3ca738c41e417fde5731e0a97e8c1356)
