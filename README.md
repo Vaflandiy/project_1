@@ -42,4 +42,10 @@ I like to understand what even a machine sometimes cannot figure out if the code
 Материалы, по которым я составил это описание себя. = The materials from which I compiled this description of myself.  
 ---
 [Лайфхакер](https://lifehacker.ru/chto-takoe-markdown/)  
-[Руководство по оформление Markdown файлов](https://gist.github.com/timseriakov/3ca738c41e417fde5731e0a97e8c1356)
+[Руководство по оформление Markdown файлов](https://gist.github.com/timseriakov/3ca738c41e417fde5731e0a97e8c1356)  
+
+Контактные данные = How you can contact with me  
+---
+[Вконтакте = Vkontakte](https://vk.com/i_am_vaflandiy)  
+[Telegram](@Vaflandiy)  
+[Discord](vaflandiy)  
