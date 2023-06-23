@@ -1,6 +1,7 @@
 Данный файл - образец таблицы. Для её работы необходимо запустить код, находящийся в application.py
 ---
-[example.xlsx](https://github.com/Vaflandiy/project_1/files/11852616/example.xlsx)
+[example.xlsx](https://github.com/Vaflandiy/project_1/files/11852616/example.xlsx)  
+
 Данный файл - образец готовой таблицы. Так как большинство значений требующихся в программе представляют собой нобор псевдо-случайных чисел и букв, на выходе, при использовании той же самой програмы и таблицы, у вас может получиться совершенно иной результат.
 ---
 [example1.xlsx](https://github.com/Vaflandiy/project_1/files/11852717/example1.xlsx)
