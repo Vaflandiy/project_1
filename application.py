@@ -1,49 +1,34 @@
-# project_1
+from openpyxl import load_workbook
+from random import choice, uniform, randint
 
-```
-from docxtpl import DocxTemplate
+wb = load_workbook("/users/denis/PycharmProjects/pythonProject/example.xlsx")
 
-doc = DocxTemplate("Документ для программы.docx")
+sheet = wb.active
 
-print('Данная программа поможет вам написать документ о необходимости уйти в отпуск. '
-      'Всё, что вам нужно делать - честно отвечать на вопросы')
-print('Вы желаете создать документ? Впишите "Да", если хотите продолжить '
-      'или любое другое слово, если вы желаете завершить сеcсию')
-word = input()
-if word == 'Да':
-    print('Добро пожаловать! Пожалуйста, введите своё имя.')
-    print('Пример: Даниил')
-    name = input()
-    print(name, 'Пожалуйста, введите своё имя в дательном падеже')
-    name_d = input()
-    print(name,
-          ", Пожалуйста, введите свою фамилию и отчество через запятую в ранее указанном порядкe, в дательном падеже.")
-    print('Пример: Вафиеву, Денисовичу')
-    familia, otchestvo = input().split(', ')
-    print(familia, name_d, otchestvo)
-    print('Пожалуйста, укажите занимаемую вами должность.')
-    print('Прошу, учитывайте, что о вашей должности будет написаног так: "От *ваша должность*,' 
-          '*Ваша фамилия, имя, отчество в родительном падеже*"')
-    status = input()
-    print('Пожалуйста, введите вашу фамилию, имя и отчество, через запятую, в родительном падеже')
-    familia_r, name_r, otchestvo_r = input().split(', ')
-    print(name, ", Пожалуйста, введите причину, по которой вам необходимо уйти в отпуск.")
-    print('Учтите, что о причине необходимости отпуска будет написано так: "По причине:..."')
-    reason = input()
-    print("Пожалуйста, введите дату вашего отбытия в отпуск и прибытия из отпуска через запятую в указанном порядке.")
-    print('Пример оформления - 28.03.2018, 28.05.2018')
-    date_of_departing, date_of_arriving = input().split(', ')
-    print('Пожалуйста, укажите продолжительность вашего отпуска в календарных днях.')
-    days_off_vacation = int(input())
+string = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtYuVvWwXxYyZz1234567890'
+for i in range(1, 1001):
+    code = ''
+    target_num_str = 'A' + str(i)
+    target_8_sim = 'B' + str(i)
+    target_float_sim = 'C' + str(i)
+    target_number_from_neg_to_pos = 'D' + str(i)
+    target_data_in_random_year_february = 'E' + str(i)
+    for k in range(8):
+        char = choice(string)
+        code = code + char
+    random_float_number = uniform(-1, 1)
+    number_from_neg_to_pos = randint(-100, 100)
+    year = randint(0, 2023)
+    if year % 4 == 0:
+        day = randint(1, 29)
+    else:
+        day = randint(1, 28)
+    random_date = (str(day) + '.02.' + str(year))
+    print(code)
+    sheet[target_num_str] = str(i)
+    sheet[target_8_sim] = code
+    sheet[target_float_sim] = random_float_number
+    sheet[target_number_from_neg_to_pos] = number_from_neg_to_pos
+    sheet[target_data_in_random_year_february] = random_date
 
-context = {'status': status, 'familia_r': familia_r, 'name_r': name_r, 'otchestvo_r': otchestvo_r, 'familia': familia,
-           'name': name_d, 'otchestvo': otchestvo, 'days_off_vacation':
-               days_off_vacation, 'date_of_departing': date_of_departing, "date_of_arriving": date_of_arriving,
-           'reason': reason}
-doc.render(context)
-doc.save("Документ для программы-final.docx")
-print('Спасибо, что воспользовались данной программой!' 
-    'Прошу заполнить имя, фамилию и должность руководителя самостоятельно!')
-print("Готовый файл был сохранён под названием 'Документ для программы-final'")
-```
-[Документ для программы.docx](https://github.com/Vaflandiy/project_1/files/11778773/default.docx)
+wb.save("/users/denis/PycharmProjects/pythonProject/example1.xlsx")
