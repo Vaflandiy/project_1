@@ -8,5 +8,10 @@
 
 В файле application.py Находится первоначальцая версия программы.   
 ---
+
 В файле application2.py Находится модифицированная программа, которая должна составлять диаграмму.
 ---
+
+Данный файл - Образец таблицы в формате CSV
+---
+[contacts_openpyxl.csv](https://github.com/Vaflandiy/project_1/files/11926697/contacts_openpyxl.csv)
