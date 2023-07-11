@@ -14,4 +14,7 @@
 
 Данный файл - Образец таблицы в формате CSV
 ---
-[contacts_openpyxl.csv](https://github.com/Vaflandiy/project_1/files/11926697/contacts_openpyxl.csv)
+[contacts_openpyxl.csv](https://github.com/Vaflandiy/project_1/files/11926697/contacts_openpyxl.csv)  
+
+В файле "Final_program" находится финальная версия програмы, к кторой были оставлены необходимые пояснения.
+---
